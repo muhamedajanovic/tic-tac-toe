@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #aeecef;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  width: 100vw;
+}
+
+.tic-tac-toe {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+  background-color: #80ded9;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #aeecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.scoreboard {
+  height: 100px;
+  background-color: #80ded9;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.score {
+  padding: 20px 40px;
+  background-color: #aeecef;
+  border-radius: 10px;
+  color: #0a3133;
+  font-weight: 700;
+}
+
+.reset,
+.continue {
+  display: flex;
+  justify-content: center;
+}
+
+.reset button,
+.continue button {
+  padding: 20px 40px;
+  font-weight: 700;
+  color: #aeecef;
+  background-color: #0a3133;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay p {
+  color: #0a3133;
+  font-size: 32px;
+}
